@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Blood Finder System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Blood Finder System</h1>
+
+<h2>Register Donor</h2>
+
+<input id="name" placeholder="Name">
+<input id="blood" placeholder="Blood Group (ex: A+, O-)">
+<input id="city" placeholder="City">
+<input id="phone" placeholder="Phone">
+<input id="date" type="date">
+
+<br><br>
+
+<button onclick="addDonor()">Register</button>
+
+<h2>Search Blood</h2>
+
+<input id="searchBlood" placeholder="Blood Group">
+<input id="searchCity" placeholder="City">
+
+<br><br>
+
+<button onclick="searchDonor()">Search</button>
+
+<button onclick="findNearestDonor()">Find Nearest Donor</button>
+
+<h2>Available Donors</h2>
+
+<table border="1">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Blood</th>
+<th>City</th>
+<th>Phone</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
